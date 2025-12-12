@@ -137,4 +137,7 @@ body{
 .box{
     justify-content:top;
 }
+form{
+    justify-self:left;
+}
 }
