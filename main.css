@@ -1,0 +1,140 @@
+:root {
+    --BG-light: #dee1ee;
+    --txtLight: #000000;
+    --BG-Dark: #1e1e2f;
+    --txtDark: #ffffff;
+    --footer-bg-color: #b0b3c8;
+    --footer-text-color: #000000;
+}
+
+*{
+    margin : 7;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+.dark-mode{
+    background-color: var(--BG-Dark);
+    color: var(--txtDark);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body{
+    background-color: var(--BG-light);
+    color: var(--txtLight);
+    transition: background-color 0.5s, color 0.5s; 
+    align-items: center;
+}
+
+body p{
+    font-size:3vh;
+}
+
+body h2{
+    font-size:3.7vh
+}
+
+main form{
+    justify-self: center;
+    font-size:3vh;
+    box-shadow: rgba(45,0,45,0.4)
+}
+
+footer{
+    background-color: #b0b3c8;
+    color: #000000;
+    text-align: center;
+    font-size:12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+header{
+    padding-top:0px;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+    margin-top:auto;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav{ 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2)
+}
+
+nav ul {
+width: 100%;
+list-style: none;
+display: flex;
+justify-content: flex-end;
+align-content: center;
+}
+
+nav li{
+    height: 50px;
+    color:dark rgb(35, 13, 56);
+}
+
+nav a{
+    height:100%;
+    padding: 0px, 30px;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+}
+nav li:hover{
+    background-color: darkgrey;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width:250px;
+    z-index: 999;
+    background-color: rgba(128, 128, 128, 0.185);
+    backdrop-filter: blur(7px);
+    box-shadow: rgba(0, 0, 0, 0.2);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+    border: black, dashed, 1px
+}
+
+.sidebar a{
+    width:100%;
+}
+
+main{
+    min-height : 80vh;
+}
+
+.box{
+    border-radius : 8px;
+    padding : 1%;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    font-size : 1.5rem;
+    text-align : center;
+    margin-left: 3%;
+}
+@media (max-width: 800px){
+
+body{
+    font-size: 50%vw;
+}
+.box{
+    justify-content:top;
+}
+}

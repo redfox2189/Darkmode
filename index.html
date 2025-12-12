@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Persist</title>
+    <script src="Main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Dark Mode Persisting Fun</h1>
+    </header>
+    <nav>
+        <ul class = "sidebar">
+            <li id="MenuBtn" onclick = hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="rgb(0,40,70)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="setting.html">Settings</a></li>
+        </ul>
+        <ul>
+            <li id="MenuBtn" onclick = showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="45px" fill="rgb(0,70,40)"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="box1" style = "grid-area: box1">
+            <h2>How...</h2>
+            <p>First this was hard to complete and I am proud that I was able to do it, but it was a rollercoaster of pain.</p> 
+            <p>To how I actually did it. Started with reseach and watching Coding2Go's <a rel = "Coding2Go video" href = "https://www.youtube.com/watch?v=_gKEUYarehE&t=195s">Video</a>, this gave me a good starting point and understanding. 
+            After gaining a starting point I exmpermented and tested different ways to "carry over" the dark mode. 
+            I failed, so many times, so I started to reseach again. 
+            This time finding "localStroage", just what I was looking for. 
+            localStroage is basically cookies but not server dependent for what I get of it. which happens to make it perfect for the dark mode setting.
+            Next is figuring out how to correctly use it. Which in itself not too hard and nether was applying it to my project.
+            After about two hours of reseach and testing, I got it to randomally work and keep working from there onward.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sample Page. All rights reserved.</p>
+    </footer>
+    <script>
+        const sidebar = document.querySelector('.sidebar');
+        function showSidebar(){
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar(){
+            sidebar.style.display = 'none';
+        }
+    </script>
+    </body>
+</html>

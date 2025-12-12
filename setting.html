@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <script src="Main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Sample Page</h1>
+    </header>
+    <nav>
+        <ul class = "sidebar">
+            <li onclick = hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="rgb(0,40,70)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <ul>
+            <li onclick = showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="45px" fill="rgb(0,70,40)"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>    
+    </nav>
+    <main>
+
+        <form id="settingsForm" method="post" action="#">
+            <section id="settings">
+                <h2>Settings</h2>
+                <h3>Visuals</h3>
+                <input type="checkbox" id="darkModeToggle" name="Darkmode"> Dark Mode
+                <br>
+            </section>
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Sample Page. All rights reserved.</p>
+    </footer>
+        <script>
+            const sidebar = document.querySelector('.sidebar');
+            function showSidebar(){
+                sidebar.style.display = 'flex';
+            }
+            function hideSidebar(){
+                sidebar.style.display = 'none';
+            }
+        </script>
+</body>
+</html>
