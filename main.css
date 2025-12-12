@@ -35,7 +35,7 @@ body h2{
 }
 
 main form{
-    justify-self: center;
+    justify-items: center;
     font-size:3vh;
     box-shadow: rgba(45,0,45,0.4)
 }
@@ -132,12 +132,10 @@ main{
 @media (max-width: 800px){
 
 body{
+    justify-content: left;
     font-size: 50%vw;
 }
 .box{
     justify-content:top;
-}
-form{
-    justify-self:left;
 }
 }
